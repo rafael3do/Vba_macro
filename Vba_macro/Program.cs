@@ -27,15 +27,15 @@ namespace Vba_macro
             StreamWriter Insere = new StreamWriter(Arquivo);//IO de escrita
                        
             while (Linhas==0)//valida as linhas digitas
-            {
-                
+            {               
                 Console.WriteLine("Digite a quantidade de linhas na planilha.");
                 Num_linhas = Console.ReadLine();
                 bool Valida_numero = int.TryParse(Num_linhas, out Linhas);
                 if (Valida_numero==false) {
                     Console.WriteLine("Numero invalido.");
                 }
-                else{
+                else
+                {
                     Insere.WriteLine("Sub Controle_vba");
                     Insere.WriteLine(" ");
                 }
@@ -61,7 +61,6 @@ namespace Vba_macro
                 Insere.WriteLine("Selection.Insert Shift:=xlDown");
                 Insere.WriteLine(" ");
                 Valida_escrita++;
-
             }
             
             void Contador()//Funçao dentro da classe que inicia o espaço para digitar as linhas organizando nas funções

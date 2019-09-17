@@ -5,3 +5,10 @@ C:\Users\503048718\Desktop\Projetos\Vba_macro\Vba_macro\obj\Debug\Vba_macro.cspr
 C:\Users\503048718\Desktop\Projetos\Vba_macro\Vba_macro\obj\Debug\Vba_macro.csproj.CoreCompileInputs.cache
 C:\Users\503048718\Desktop\Projetos\Vba_macro\Vba_macro\obj\Debug\Vba_macro.exe
 C:\Users\503048718\Desktop\Projetos\Vba_macro\Vba_macro\obj\Debug\Vba_macro.pdb
+C:\Users\Teste\Documents\GitHub\Vba_macro\Vba_macro\bin\Debug\Vba_macro.exe.config
+C:\Users\Teste\Documents\GitHub\Vba_macro\Vba_macro\bin\Debug\Vba_macro.exe
+C:\Users\Teste\Documents\GitHub\Vba_macro\Vba_macro\bin\Debug\Vba_macro.pdb
+C:\Users\Teste\Documents\GitHub\Vba_macro\Vba_macro\obj\Debug\Vba_macro.csprojAssemblyReference.cache
+C:\Users\Teste\Documents\GitHub\Vba_macro\Vba_macro\obj\Debug\Vba_macro.csproj.CoreCompileInputs.cache
+C:\Users\Teste\Documents\GitHub\Vba_macro\Vba_macro\obj\Debug\Vba_macro.exe
+C:\Users\Teste\Documents\GitHub\Vba_macro\Vba_macro\obj\Debug\Vba_macro.pdb

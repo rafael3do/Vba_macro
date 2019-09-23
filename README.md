@@ -7,4 +7,5 @@ para
 1
 0
 1
+___________________________________________________________________________________________________________________________________________
 Code that generates milestone in vba for excell spreadsheet suitability linearly. Fits planar linearly of string with example = 0011 to 0 1 0 1

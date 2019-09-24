@@ -26,7 +26,7 @@ namespace Vba_macro
             FileStream Arquivo = new FileStream(@"C:\Temp\Codigo_vba_macro.txt", FileMode.Create);
             StreamWriter Insere = new StreamWriter(Arquivo);//IO de escrita
                        
-            while (Linhas==0)//valida as linhas digitas
+            while (Linhas==0)//valida as linhas digitadas
             {               
                 Console.WriteLine("Digite a quantidade de linhas na planilha.");
                 Num_linhas = Console.ReadLine();
@@ -41,7 +41,7 @@ namespace Vba_macro
                 }
             }
 
-            for (int i = 0; i <= Linhas; i += 200)//Crias as sub consultar do vba
+            for (int i = 0; i <= Linhas; i += 200)//Crias as sub consultas do vba
             {
                 Insere.WriteLine("Call Ciclo" + Val_teste);
                 Insere.WriteLine(" ");

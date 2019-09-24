@@ -5,12 +5,15 @@ using System.IO;
 //using System.Text;
 //using System.Threading.Tasks;
 //Software criadado para a adequação em linhas de uma planilha ja pronta.
+// Software designed to fit rows into a ready-made spreadsheet.
+
 namespace Vba_macro
 {
     class Program
     {
         static void Main(string[] args)
         {//abaixo inicialização das variaveis
+            //below variable initialization
             string Pasta = @"C:\Temp";
             int Linhas = 0;
             int Val_teste = 1;
@@ -19,15 +22,21 @@ namespace Vba_macro
             int Valida_escrita = 0;
             int escrevi = 1;
             if (!File.Exists(Pasta))//valida se tem a pasta temp caso contrario ele cria
+                                    // validate if it has temp folder otherwise it creates
+
             {
                 System.IO.Directory.CreateDirectory(Pasta);
             }
 
             FileStream Arquivo = new FileStream(@"C:\Temp\Codigo_vba_macro.txt", FileMode.Create);
             StreamWriter Insere = new StreamWriter(Arquivo);//IO de escrita
-                       
+                                                            // IO write
+
+
             while (Linhas==0)//valida as linhas digitadas
-            {               
+                             // validate the typed lines
+
+            {
                 Console.WriteLine("Digite a quantidade de linhas na planilha.");
                 Num_linhas = Console.ReadLine();
                 bool Valida_numero = int.TryParse(Num_linhas, out Linhas);
@@ -42,6 +51,8 @@ namespace Vba_macro
             }
 
             for (int i = 0; i <= Linhas; i += 200)//Crias as sub consultas do vba
+                                                  // Create vba sub queries
+
             {
                 Insere.WriteLine("Call Ciclo" + Val_teste);
                 Insere.WriteLine(" ");
@@ -52,6 +63,8 @@ namespace Vba_macro
             Insere.WriteLine(" ");
             
             for (Sub_ciclo = 1; Sub_ciclo < Linhas; Sub_ciclo++)//Digita a linha dentro das sub consultas do vba
+                                                                // Type the line inside vba sub queries
+
             {
                 Contador();
                 Insere.WriteLine("Range(\"E" + (Sub_ciclo + 1) + ":H" + (Sub_ciclo + 1) + "\").Select");
@@ -64,6 +77,8 @@ namespace Vba_macro
             }
             
             void Contador()//Funçao dentro da classe que inicia o espaço para digitar as linhas organizando nas funções
+                           // Function within class that starts the space to type lines by arranging in functions
+
             {
                 if (Valida_escrita==0) {
                     for (int i = 0; i < 1; i++)

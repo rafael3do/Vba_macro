@@ -1,0 +1,68 @@
+Sub Controle_vba
+ 
+Call Ciclo1
+ 
+End Sub
+ 
+ 
+Sub Ciclo1
+Dim i As Integer
+For i = 1 To 1
+ 
+Range("E2:H2").Select
+Application.CutCopyMode = False
+Selection.Cut
+Rows("3:3").Select
+Selection.Insert Shift:=xlDown
+ 
+Range("E3:H3").Select
+Application.CutCopyMode = False
+Selection.Cut
+Rows("5:5").Select
+Selection.Insert Shift:=xlDown
+ 
+Range("E4:H4").Select
+Application.CutCopyMode = False
+Selection.Cut
+Rows("7:7").Select
+Selection.Insert Shift:=xlDown
+ 
+Range("E5:H5").Select
+Application.CutCopyMode = False
+Selection.Cut
+Rows("9:9").Select
+Selection.Insert Shift:=xlDown
+ 
+Range("E6:H6").Select
+Application.CutCopyMode = False
+Selection.Cut
+Rows("11:11").Select
+Selection.Insert Shift:=xlDown
+ 
+Range("E7:H7").Select
+Application.CutCopyMode = False
+Selection.Cut
+Rows("13:13").Select
+Selection.Insert Shift:=xlDown
+ 
+Range("E8:H8").Select
+Application.CutCopyMode = False
+Selection.Cut
+Rows("15:15").Select
+Selection.Insert Shift:=xlDown
+ 
+Range("E9:H9").Select
+Application.CutCopyMode = False
+Selection.Cut
+Rows("17:17").Select
+Selection.Insert Shift:=xlDown
+ 
+Range("E10:H10").Select
+Application.CutCopyMode = False
+Selection.Cut
+Rows("19:19").Select
+Selection.Insert Shift:=xlDown
+ 
+Next i
+ 
+End Sub

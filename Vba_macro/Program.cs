@@ -70,8 +70,7 @@ namespace Vba_macro
             
             void Contador()//Funçao dentro da classe que inicia o espaço para digitar as linhas organizando nas funções
                            // Function within class that starts the space to type lines by arranging in functions
-
-            {
+            {            
                 if (Valida_escrita==0) {
                     for (int i = 0; i < 1; i++)
                     {
@@ -96,7 +95,6 @@ namespace Vba_macro
                     escrevi += 1;
                     Valida_escrita = 1;
                 }
-
             }
             Insere.WriteLine("Next i");
             Insere.WriteLine(" ");

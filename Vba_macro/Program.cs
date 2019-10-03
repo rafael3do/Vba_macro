@@ -1,9 +1,6 @@
 ﻿using System;
 using System.IO;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+
 //Software criadado para a adequação em linhas de uma planilha ja pronta.
 // Software designed to fit rows into a ready-made spreadsheet.
 
@@ -56,7 +53,6 @@ namespace Vba_macro
             
             for (Sub_ciclo = 1; Sub_ciclo < Linhas; Sub_ciclo++)//Digita a linha dentro das sub consultas do vba
                                                                 // Type the line inside vba sub queries
-
             {
                 Contador();
                 Insere.WriteLine("Range(\"E" + (Sub_ciclo + 1) + ":H" + (Sub_ciclo + 1) + "\").Select");

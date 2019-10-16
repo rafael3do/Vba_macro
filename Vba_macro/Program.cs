@@ -47,7 +47,6 @@ namespace Vba_macro
                 Insere.WriteLine(" ");
                 Val_teste += 1;
             }
-
             Insere.WriteLine("End Sub");
             Insere.WriteLine(" ");
             

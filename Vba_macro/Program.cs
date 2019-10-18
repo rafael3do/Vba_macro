@@ -21,7 +21,6 @@ namespace Vba_macro
             {
                 System.IO.Directory.CreateDirectory(Pasta);
             }
-
             FileStream Arquivo = new FileStream(@"C:\Temp\Codigo_vba_macro.txt", FileMode.Create);
             StreamWriter Insere = new StreamWriter(Arquivo);//IO de escrita
                                                            // IO write

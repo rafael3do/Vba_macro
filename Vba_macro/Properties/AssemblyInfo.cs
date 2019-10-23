@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("Rafael3do")]
 [assembly: AssemblyProduct("Vba_macro")]
 [assembly: AssemblyCopyright("Copyright Rafael3do©  2019")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("rafael3do")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible

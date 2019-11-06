@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Rafael3do")]
 [assembly: AssemblyProduct("Vba_macro")]
-[assembly: AssemblyCopyright("Copyright Rafael3do©  2019")]
+[assembly: AssemblyCopyright("Copyright Rafael3do © 2019")]
 [assembly: AssemblyTrademark("rafael3do")]
 [assembly: AssemblyCulture("")]
 

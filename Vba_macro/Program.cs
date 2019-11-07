@@ -47,8 +47,7 @@ namespace Vba_macro
                 Val_teste += 1;
             }
             Insere.WriteLine("End Sub");
-            Insere.WriteLine(" ");
-            
+            Insere.WriteLine(" ");            
             for (Sub_ciclo = 1; Sub_ciclo < Linhas; Sub_ciclo++)//Digita a linha dentro das sub consultas do vba
                                                                 // Type the line inside vba sub queries
             {
@@ -60,8 +59,7 @@ namespace Vba_macro
                 Insere.WriteLine("Selection.Insert Shift:=xlDown");
                 Insere.WriteLine(" ");
                 Valida_escrita++;
-            }
-            
+            }            
             void Contador()//Funçao dentro da classe que inicia o espaço para digitar as linhas organizando nas funções
                            // Function within class that starts the space to type lines by arranging in functions
             {            

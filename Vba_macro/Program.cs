@@ -5,8 +5,10 @@ using System.IO;
 // Software designed to fit rows into a ready-made spreadsheet.
 
 namespace Vba_macro
-{    class Program
-    {        static void Main(string[] args)
+{
+    class Program
+    {
+        static void Main(string[] args)
         {//abaixo inicialização das variaveis.
             //below variable initialization.
             string Pasta = @"C:\Temp";
@@ -23,14 +25,15 @@ namespace Vba_macro
             }
             FileStream Arquivo = new FileStream(@"C:\Temp\Codigo_vba_macro.txt", FileMode.Create);
             StreamWriter Insere = new StreamWriter(Arquivo);//IO de escrita.
-                                                           // IO write.
-            while (Linhas==0)//valida as linhas digitadas.
-                             // validate the typed lines.
+                                                            // IO write.
+            while (Linhas == 0)//valida as linhas digitadas.
+                               // validate the typed lines.
             {
                 Console.WriteLine("Digite a quantidade de linhas na planilha.");
                 Num_linhas = Console.ReadLine();
                 bool Valida_numero = int.TryParse(Num_linhas, out Linhas);
-                if (Valida_numero==false) {
+                if (Valida_numero == false)
+                {
                     Console.WriteLine("Numero invalido.");
                 }
                 else
@@ -47,7 +50,7 @@ namespace Vba_macro
                 Val_teste += 1;
             }
             Insere.WriteLine("End Sub");
-            Insere.WriteLine(" ");            
+            Insere.WriteLine(" ");
             for (Sub_ciclo = 1; Sub_ciclo < Linhas; Sub_ciclo++)//Digita a linha dentro das sub consultas do vba.
                                                                 // Type the line inside vba sub queries.
             {
@@ -59,15 +62,16 @@ namespace Vba_macro
                 Insere.WriteLine("Selection.Insert Shift:=xlDown");
                 Insere.WriteLine(" ");
                 Valida_escrita++;
-            }            
+            }
             void Contador()//Funçao dentro da classe que inicia o espaço para digitar as linhas organizando nas funções.
                            // Function within class that starts the space to type lines by arranging in functions.
-            {            
-                if (Valida_escrita==0) {
+            {
+                if (Valida_escrita == 0)
+                {
                     for (int i = 0; i < 1; i++)
                     {
                         Insere.WriteLine(" ");
-                        Insere.WriteLine("Sub Ciclo"+ escrevi);
+                        Insere.WriteLine("Sub Ciclo" + escrevi);
                         Insere.WriteLine("Dim i As Integer");
                         Insere.WriteLine("For i = 1 To 1");
                         Insere.WriteLine(" ");
@@ -75,7 +79,7 @@ namespace Vba_macro
                     escrevi += 1;
                     Valida_escrita = 1;
                 }
-                if (Valida_escrita==200)
+                if (Valida_escrita == 200)
                 {
                     Insere.WriteLine("Next i");
                     Insere.WriteLine("End Sub");
@@ -96,5 +100,5 @@ namespace Vba_macro
             Console.WriteLine("Gerado o codigo da macro em C:\\Temp\\Codigo_vba_macro.txt");
             System.Diagnostics.Process.Start("C:\\Temp\\Codigo_vba_macro.txt");
         }
-     }
+    }
 }//finish progam.

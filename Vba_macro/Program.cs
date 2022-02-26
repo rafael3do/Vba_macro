@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-//Software criadado para a adequação em linhas de uma planilha ja pronta.
+// Software criadado para a adequação em linhas de uma planilha ja pronta.
 // Software designed to fit rows into a ready-made spreadsheet.
 
 namespace Vba_macro

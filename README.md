@@ -8,7 +8,7 @@ para
 0
 1
 
-Concluiddo.
+Concluido.
 ___________________________________________________________________________________________________________________________________________
 
 Code that generates milestone in vba for excell spreadsheet suitability linearly. Fits planar linearly of string with example = 0011 to

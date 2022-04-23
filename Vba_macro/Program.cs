@@ -17,6 +17,7 @@ namespace Vba_macro
             string num_linhas = "";
             int valida_escrita = 0;
             int escrevi = 1;
+
             if (!File.Exists(pasta))//valida se tem a pasta temp caso contrario ele cria.
                                     // validate if it has temp folder otherwise it creates.
             {

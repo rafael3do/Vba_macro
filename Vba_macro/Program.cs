@@ -23,6 +23,7 @@ namespace Vba_macro
             {
                 System.IO.Directory.CreateDirectory(pasta);
             }
+
             FileStream Arquivo = new FileStream(@"C:\Temp\Codigo_vba_macro.txt", FileMode.Create);
             StreamWriter Insere = new StreamWriter(Arquivo);//IO de escrita.
                                                             // IO write.
@@ -42,6 +43,7 @@ namespace Vba_macro
                     Insere.WriteLine(" ");
                 }
             }
+
             for (int i = 0; i <= linhas; i += 200)//Crias as sub consultas do vba.
                                                   // Create vba sub queries.
             {
@@ -49,6 +51,7 @@ namespace Vba_macro
                 Insere.WriteLine(" ");
                 val_teste += 1;
             }
+
             Insere.WriteLine("End Sub");
             Insere.WriteLine(" ");
             for (sub_ciclo = 1; sub_ciclo < linhas; sub_ciclo++)//Digita a linha dentro das sub consultas do vba.
@@ -63,6 +66,7 @@ namespace Vba_macro
                 Insere.WriteLine(" ");
                 valida_escrita++;
             }
+
             void Contador()//Funçao dentro da classe que inicia o espaço para digitar as linhas organizando nas funções.
                            // Function within class that starts the space to type lines by arranging in functions.
             {
@@ -79,6 +83,7 @@ namespace Vba_macro
                     escrevi += 1;
                     valida_escrita = 1;
                 }
+
                 if (valida_escrita == 200)
                 {
                     Insere.WriteLine("Next i");
@@ -92,6 +97,7 @@ namespace Vba_macro
                     valida_escrita = 1;
                 }
             }
+
             Insere.WriteLine("Next i");
             Insere.WriteLine(" ");
             Insere.WriteLine("End Sub");
@@ -99,6 +105,7 @@ namespace Vba_macro
             Arquivo.Close();
             Console.WriteLine("Gerado o codigo da macro em C:\\Temp\\Codigo_vba_macro.txt");
             System.Diagnostics.Process.Start("C:\\Temp\\Codigo_vba_macro.txt");
+
         }
     }
 }//Finish progam.

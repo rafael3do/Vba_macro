@@ -2,7 +2,6 @@
 using System.IO;
 // Software criadado para a adequação em linhas de uma planilha ja pronta.
 // Software designed to fit rows into a ready-made spreadsheet.
-
 namespace Vba_macro
 {
     class Program
@@ -23,7 +22,6 @@ namespace Vba_macro
             {
                 System.IO.Directory.CreateDirectory(pasta);
             }
-
             FileStream Arquivo = new FileStream(@"C:\Temp\Codigo_vba_macro.txt", FileMode.Create);
             StreamWriter Insere = new StreamWriter(Arquivo);//IO de escrita.
                                                             // IO write.

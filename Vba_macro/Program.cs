@@ -103,7 +103,6 @@ namespace Vba_macro
             Arquivo.Close();
             Console.WriteLine("Gerado o codigo da macro em C:\\Temp\\Codigo_vba_macro.txt");
             System.Diagnostics.Process.Start("C:\\Temp\\Codigo_vba_macro.txt");
-
         }
     }
 }//Finish progam.

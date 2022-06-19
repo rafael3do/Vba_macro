@@ -54,6 +54,7 @@ namespace Vba_macro
 
             Insere.WriteLine("End Sub");
             Insere.WriteLine(" ");
+
             for (sub_ciclo = 1; sub_ciclo < linhas; sub_ciclo++)//Digita a linha dentro das sub consultas do vba.
                                                                 // Type the line inside vba sub queries.
             {

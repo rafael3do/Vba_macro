@@ -6,6 +6,7 @@ namespace Vba_macro
 {
     class Program
     {
+
         static void Main(string[] args)
         {//abaixo inicialização das variaveis.
             //below variable initialization.
@@ -22,6 +23,7 @@ namespace Vba_macro
             {
                 System.IO.Directory.CreateDirectory(pasta);
             }
+
             FileStream Arquivo = new FileStream(@"C:\Temp\Codigo_vba_macro.txt", FileMode.Create);
             StreamWriter Insere = new StreamWriter(Arquivo);//IO de escrita.
                                                             // IO write.
